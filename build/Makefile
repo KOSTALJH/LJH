@@ -129,6 +129,43 @@ runLinkedLists/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runLinkedLists.dir/build.make CMakeFiles/runLinkedLists.dir/build
 .PHONY : runLinkedLists/fast
 
+#=============================================================================
+# Target rules for targets named runCircularLinkedLists
+
+# Build rule for target.
+runCircularLinkedLists: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runCircularLinkedLists
+.PHONY : runCircularLinkedLists
+
+# fast build rule for target.
+runCircularLinkedLists/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runCircularLinkedLists.dir/build.make CMakeFiles/runCircularLinkedLists.dir/build
+.PHONY : runCircularLinkedLists/fast
+
+CircularLinkedList.o: CircularLinkedList.c.o
+.PHONY : CircularLinkedList.o
+
+# target to build an object file
+CircularLinkedList.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runCircularLinkedLists.dir/build.make CMakeFiles/runCircularLinkedLists.dir/CircularLinkedList.c.o
+.PHONY : CircularLinkedList.c.o
+
+CircularLinkedList.i: CircularLinkedList.c.i
+.PHONY : CircularLinkedList.i
+
+# target to preprocess a source file
+CircularLinkedList.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runCircularLinkedLists.dir/build.make CMakeFiles/runCircularLinkedLists.dir/CircularLinkedList.c.i
+.PHONY : CircularLinkedList.c.i
+
+CircularLinkedList.s: CircularLinkedList.c.s
+.PHONY : CircularLinkedList.s
+
+# target to generate assembly for a file
+CircularLinkedList.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runCircularLinkedLists.dir/build.make CMakeFiles/runCircularLinkedLists.dir/CircularLinkedList.c.s
+.PHONY : CircularLinkedList.c.s
+
 LinkedList.o: LinkedList.c.o
 .PHONY : LinkedList.o
 
@@ -177,6 +214,30 @@ ex4_2.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runLinkedLists.dir/build.make CMakeFiles/runLinkedLists.dir/ex4_2.c.s
 .PHONY : ex4_2.c.s
 
+ex4_3.o: ex4_3.c.o
+.PHONY : ex4_3.o
+
+# target to build an object file
+ex4_3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runCircularLinkedLists.dir/build.make CMakeFiles/runCircularLinkedLists.dir/ex4_3.c.o
+.PHONY : ex4_3.c.o
+
+ex4_3.i: ex4_3.c.i
+.PHONY : ex4_3.i
+
+# target to preprocess a source file
+ex4_3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runCircularLinkedLists.dir/build.make CMakeFiles/runCircularLinkedLists.dir/ex4_3.c.i
+.PHONY : ex4_3.c.i
+
+ex4_3.s: ex4_3.c.s
+.PHONY : ex4_3.s
+
+# target to generate assembly for a file
+ex4_3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runCircularLinkedLists.dir/build.make CMakeFiles/runCircularLinkedLists.dir/ex4_3.c.s
+.PHONY : ex4_3.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -185,13 +246,20 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... runCircularLinkedLists"
 	@echo "... runLinkedLists"
+	@echo "... CircularLinkedList.o"
+	@echo "... CircularLinkedList.i"
+	@echo "... CircularLinkedList.s"
 	@echo "... LinkedList.o"
 	@echo "... LinkedList.i"
 	@echo "... LinkedList.s"
 	@echo "... ex4_2.o"
 	@echo "... ex4_2.i"
 	@echo "... ex4_2.s"
+	@echo "... ex4_3.o"
+	@echo "... ex4_3.i"
+	@echo "... ex4_3.s"
 .PHONY : help
 
 
