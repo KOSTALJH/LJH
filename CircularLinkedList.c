@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "CircularLinkedList.h"
 
 linkedList_h* createLinkedList_h(void){
