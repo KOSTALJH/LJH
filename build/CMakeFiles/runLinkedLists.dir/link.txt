@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/runLinkedLists.dir/ex4_2.c.o CMakeFiles/runLinkedLists.dir/LinkedList.c.o -o runLinkedLists 
